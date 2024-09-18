@@ -22,6 +22,7 @@ namespace BusinessLogicLayer
             {
                 FileName = fileName,
                 OriginalImage = imageData,
+                ProcessedImage = new byte[0], // Initialize with an empty byte array
                 UploadedAt = DateTime.Now
             };
 
@@ -30,7 +31,6 @@ namespace BusinessLogicLayer
 
             return imageModel;
         }
-
         public async Task<ImageModel> ApplyFilterAsync(int imageId, string filterType)
         {
             var imageModel = await _context.Images.FindAsync(imageId);
