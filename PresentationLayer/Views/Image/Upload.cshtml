@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Upload Image";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="file">Select an image to upload:</label>
+        <input type="file" name="file" id="file" accept="image/*" required />
+    </div>
+    <div>
+        <button type="submit">Upload</button>
+    </div>
+</form>
