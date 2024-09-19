@@ -5,22 +5,24 @@
 
 <h2>@ViewData["Title"]</h2>
 
-<div>
-    <h3>Original Image</h3>
-    <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.OriginalImage)" alt="Original Image" />
-</div>
+<div style="display: flex; align-items: flex-start;">
+    <div style="margin-right: 20px; text-align: center;">
+        <h3>Original Image</h3>
+        <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.OriginalImage)" alt="Original Image" style="max-width: 100%; height: auto;" />
+    </div>
 
-<div>
-    <h3>Processed Image (Grayscale)</h3>
-    @if (Model.ProcessedImage != null)
+    <div style="text-align: center;">
+        <h3>Processed Image (Grayscale)</h3>
+        @if (Model.ProcessedImage != null)
 
-    {
-        <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ProcessedImage)" alt="Processed Image" />
-    }
+        {
+            <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ProcessedImage)" alt="Processed Image" style="max-width: 100%; height: auto;" />
+        }
 
-    else
+        else
 
-    {
-        <p>The image has not been processed yet.</p>
-    }
+        {
+            <p>The image has not been processed yet.</p>
+        }
+    </div>
 </div>
