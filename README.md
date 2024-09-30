@@ -1,6 +1,8 @@
 # Next-Gen Coding with My Daughter: Software Architecture!
 ## Monolithic Layered Approach
 
+[This project was initially presented on my LinkedIn, here](https://www.linkedin.com/feed/update/urn:li:activity:7245090008817176576/)
+
 This project is about developing an app that processes images, initially applying a grayscale filter. This concept can extend to image analysis, AI, and more, but we'll focus on the architecture and the usage of AI to assist us in building this solution.
 
 ![Dreams to Reality, image converted to grayscale](https://github.com/wwwingmangit/ImageProcessingApp-Layered/raw/main/ImagesForREADME/dtr_layer_project.png)
